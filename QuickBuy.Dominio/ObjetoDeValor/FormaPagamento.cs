@@ -3,7 +3,7 @@ using QuickBuy.Dominio.Enumerados;
 
 namespace QuickBuy.Dominio.ObjetoDeValor
 {
-    public class FormaPagamento : Entidade
+    public class FormaPagamento
     {
         public int Id { get; set; }
         public string Nome { get; set; }
@@ -29,9 +29,5 @@ namespace QuickBuy.Dominio.ObjetoDeValor
             get { return Id == (int)TipoFormaPagamentoEnum.NaoDefinido; }
         }
 
-        public override void Validate()
-        {
-            throw new System.NotImplementedException();
-        }
     }
 }

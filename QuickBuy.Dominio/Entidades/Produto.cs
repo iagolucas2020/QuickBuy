@@ -9,7 +9,7 @@
 
         public override void Validate()
         {
-            throw new System.NotImplementedException();
+            if (Id == 0) AdicionarCritica("Não foi o produto");
         }
     }
 }
